@@ -1,3 +1,3 @@
 export * from "./Profiler";
-export * from "./Folders";
+export * from "./folders/Folders";
 export * from "./Statistics";

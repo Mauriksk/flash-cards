@@ -1,0 +1,13 @@
+.layOutContainer {
+    display: flex;
+}
+
+.contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    border-radius: 10px;
+    width: 90%;
+    background-color: rgba(249, 244, 244, 0.15);
+}

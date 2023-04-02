@@ -1,0 +1,27 @@
+.navBarcontainer{
+    margin: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(249, 244, 244, 0.15);
+    height: 95vh;
+    width: 200px;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+.navItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:  20px 0px;
+    transition: 0.5s;
+}
+.navItem:hover {
+    background-color: rgba(249, 244, 244, 0.15);
+    padding-left: 10px;
+    border-right: 20px solid rgb(243, 239, 242);
+}
+
+.navItem p { 
+    font-size: 28px;
+    
+}

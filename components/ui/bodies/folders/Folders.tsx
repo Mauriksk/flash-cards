@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import styles from "./folders.module.css";
 import { UIContext } from "@/context/ui";
+import { Modal } from "../../modal/Modal";
 
 export const Folders = () => {
   const { folders } = useContext(UIContext);
@@ -16,6 +17,7 @@ export const Folders = () => {
           </div>
         ))}
       </div>
+      <Modal />
     </div>
   );
 };

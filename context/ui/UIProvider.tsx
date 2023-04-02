@@ -5,6 +5,7 @@ import { Folders } from "../../components/ui/bodies/folders/Folders";
 export interface UIState {
   currentItem: string;
   folders: Folder[];
+  modalCreateFolder: boolean;
 }
 
 const UI_INITIAL_STATE: UIState = {
@@ -20,6 +21,7 @@ const UI_INITIAL_STATE: UIState = {
       name: "Spanish Folder",
     },
   ],
+  modalCreateFolder: false,
 };
 
 export const UIProvider = ({ children }: any) => {
@@ -28,6 +30,7 @@ export const UIProvider = ({ children }: any) => {
   const selectItem = (itemType: ItemType) => {
     dispatch({ item: itemType });
   };
+
 
   return (
     <UIContext.Provider

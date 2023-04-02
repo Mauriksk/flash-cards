@@ -3,7 +3,8 @@ import { createContext } from "react";
 interface ContextProps {
     currentItem: string;
     selectItem: (item: ItemType) => void;
-    folders: Folder[]
+    folders: Folder[];
+    modalCreateFolder: boolean;
 }
 
 export type ItemType = "Folders" | "Profiler" | "Statistics"
